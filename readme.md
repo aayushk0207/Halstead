@@ -35,7 +35,7 @@ Designed for **students, researchers, and developers** to quickly measure progra
 ---
 
 ## 📸 Screenshot
-_Add a screenshot of your popup UI here_
+![Halstead Metrics Popup](screenshots/popup.png)
 
 ---
 
