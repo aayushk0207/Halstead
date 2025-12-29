@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Halstead Metrics</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="title">Halstead Metrics</div>
+    <div class="subtitle">Analyze JavaScript on this page</div>
+  </div>
+
+  <div class="container">
+
+    <button id="scan">Scan Page</button>
+
+    <div id="output" class="output">
+      Click <b>Scan Page</b> to analyze.
+    </div>
+
+    <!-- Base Halstead Metrics -->
+    <div id="baseMetrics" class="grid" style="display:none">
+      <div class="card">
+        <div class="label">Unique Operators (n₁)</div>
+        <div id="n1" class="value"></div>
+      </div>
+      <div class="card">
+        <div class="label">Unique Operands (n₂)</div>
+        <div id="n2" class="value"></div>
+      </div>
+      <div class="card">
+        <div class="label">Total Operators (N₁)</div>
+        <div id="N1" class="value"></div>
+      </div>
+      <div class="card">
+        <div class="label">Total Operands (N₂)</div>
+        <div id="N2" class="value"></div>
+      </div>
+    </div>
+
+    <!-- Derived Metrics -->
+    <div id="metrics" class="grid" style="display:none">
+      <div class="card">
+        <div class="label">Vocabulary (η)</div>
+        <div id="vocab" class="value"></div>
+      </div>
+      <div class="card">
+        <div class="label">Length (N)</div>
+        <div id="length" class="value"></div>
+      </div>
+      <div class="card">
+        <div class="label">Volume (V)</div>
+        <div id="volume" class="value"></div>
+      </div>
+      <div class="card">
+        <div class="label">Difficulty (D)</div>
+        <div id="difficulty" class="value"></div>
+      </div>
+      <div class="card" style="grid-column: span 2;">
+        <div class="label">Effort (E)</div>
+        <div id="effort" class="value"></div>
+      </div>
+      <div class="card" style="grid-column: span 2;">
+        <div class="label">Live Variables</div>
+        <div id="liveVars" class="value"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="halstead.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

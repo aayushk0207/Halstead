@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Halstead Metrics Analyzer",
+  "version": "1.0.0",
+  "description": "Analyze JavaScript on the current page and compute Halstead metrics.",
+  "permissions": ["scripting", "activeTab"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}
